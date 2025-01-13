@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Column(
-                modifier = Modifier.fillMaxWidth().padding(8.dp),
+                modifier = Modifier.fillMaxWidth().padding(14.dp),
                 verticalArrangement = Arrangement.Top,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
@@ -64,7 +64,7 @@ fun App() {
 fun TableTitle(text: String) {
     Surface(
         color = Color.DarkGray,
-        border = BorderStroke(1.dp, Color.Black),
+        border = BorderStroke(3.dp, Color.Red),
         modifier = Modifier.fillMaxWidth()
     ) { Text(
         text = text,
@@ -79,7 +79,7 @@ fun TableTitle(text: String) {
 fun TableHeader(vararg headers: Any) {
     Surface(
         color = Color.LightGray,
-        border = BorderStroke(1.dp, Color.Black)
+        border = BorderStroke(3.dp, Color.Black)
     ) {
         Row(
             horizontalArrangement = Arrangement.SpaceEvenly,
@@ -97,7 +97,7 @@ fun TableHeader(vararg headers: Any) {
 fun TableRow(vararg values: Any) {
     Surface(
         color = Color.White,
-        border = BorderStroke(1.dp, Color.Black)
+        border = BorderStroke(3.dp, Color.Black)
     ) {
         Row(
             horizontalArrangement = Arrangement.SpaceEvenly,
